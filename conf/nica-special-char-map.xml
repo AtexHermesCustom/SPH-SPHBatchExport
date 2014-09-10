@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!-- 
+  special character map
+  - replacement for special chars
+  - entries correspond to the Newsroom SC command
+  
+  1. For special chars entered through the SC command
+  Newsroom command: <SC{font id},{char code}>
+  Entry: <map tag="glyph" font-id="{font id}" orig-text="&amp;#{char code};">{replacement}</map>
+
+  2. For special chars using a specific font in a tag
+  Entry: <map tag="{tag}" font-id="{font id}" orig-text="&amp;#{char code};">{replacement}</map>
+
+  3. For single char mappings using char-code
+  Entry: <map char-code="{char code}">{replacement}</map>
+  
+  Revision history:
+  20120720 jpm/atex creation
+-->
+<lookup>
+  <!-- mapping strings -->
+  <map tag="glyph" font-id="2000" orig-text="&amp;#117;">&#8226;</map>
+  <map tag="glyph" font-id="2000" orig-text="&amp;#46;">&#160;</map>
+  <map tag="glyph" font-id="2000" orig-text="&amp;#42;">&#160;</map>
+  <map tag="glyph" font-id="252" orig-text="&amp;#69;">&#160;</map>
+  <map tag="W_ARROW" font-id="252" orig-text="45"> </map>
+  <!-- mapping single chars using char code -->
+  <map char-code="8194"></map>
+</lookup>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!-- 
+  special tag map
+  - special handling for specific tags: add opening and closing format tags
+  
+  Revision history:
+  20120910 jpm/atex creation
+-->
+<lookup>
+  <!-- mapping strings -->
+  <map tag="TEXT_BOLD">
+      <open>&lt;b class="hd"&gt;</open>
+      <close>&lt;/b&gt;</close>
+  </map>
+  <map tag="INFO_B">
+      <open>&lt;h3 class="ib"&gt;</open>
+      <close>&lt;/h3&gt;</close>
+  </map>
+  <map tag="Q_B">
+      <open>&lt;h3 class="ib"&gt;</open>
+      <close>&lt;/h3&gt;</close>
+  </map>
+  <map tag="INFOBOX_HD">
+      <open>&lt;h3 class="ibh"&gt;</open>
+      <close>&lt;/h3&gt;</close>
+  </map>  
+  <map tag="SAY_HD">
+      <open>&lt;h3 class="sh"&gt;</open>
+      <close>&lt;/h3&gt;</close>
+  </map> 
+  <map tag="BEAU_BOLD">
+      <open>&lt;b class="bb"&gt;</open>
+      <close>&lt;/b&gt;</close>
+  </map>  
+  <map tag="RATING">
+      <open>&lt;b class="rt"&gt;</open>
+      <close>&lt;/b&gt;</close>
+  </map>         
+  <map tag="DROPCAP">
+      <open>&lt;span class="dc"&gt;</open>
+      <close>&lt;/span&gt;</close>
+  </map> 
+  <map tag="DROPCAP_Q">
+      <open>&lt;span class="dc"&gt;</open>
+      <close>&lt;/span&gt;</close>
+  </map>      
+</lookup>

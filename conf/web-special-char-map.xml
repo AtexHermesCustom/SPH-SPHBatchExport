@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+  special character map
+  - replacement for special chars
+  - entries correspond to the Newsroom SC command
+
+  1. For special chars entered through the SC command
+  Newsroom command: <SC{font id},{char code}>
+  Entry: <map tag="glyph" font-id="{font id}" orig-text="&amp;#{char code};">{replacement}</map>
+
+  2. For special chars using a specific font in a tag
+  Entry: <map tag="{tag}" font-id="{font id}" orig-text="&amp;#{char code};">{replacement}</map>
+
+  Revision history:
+  20120720 jpm/atex creation
+-->
+<lookup>
+</lookup>

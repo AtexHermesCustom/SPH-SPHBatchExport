@@ -1,0 +1,13 @@
+<!-- Dtd file for text from Hermes    -->
+
+<!ELEMENT br                           (#PCDATA)>
+
+<!ELEMENT body (Summary*, Caption*, Headline*, Byline?, BodyText?)>
+
+      <!ELEMENT Summary               (#PCDATA)>
+      <!ELEMENT Caption               (#PCDATA|br)*>
+      <!ELEMENT Headline              (#PCDATA)>
+      <!ELEMENT Byline                (#PCDATA)>
+
+      <!ELEMENT BodyText (StoryText?)>
+      	<!ELEMENT StoryText              (#PCDATA|br)*>
