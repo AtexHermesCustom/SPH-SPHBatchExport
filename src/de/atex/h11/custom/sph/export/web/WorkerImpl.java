@@ -583,6 +583,7 @@ public class WorkerImpl extends AbstractWorker {
             nl = (NodeList) xp.evaluate("//body/title", doc, XPathConstants.NODESET);
             if (nl.getLength() == 1) {
                 strTitle = replaceReservedCharMarkers(strTitle);
+                strTitle = strTitle.replaceAll("\\ *,\\ *", ",");
                 ((Element) nl.item(0)).setTextContent(strTitle.trim());
             }
         }
@@ -594,6 +595,7 @@ public class WorkerImpl extends AbstractWorker {
             nl = (NodeList) xp.evaluate("//body/country", doc, XPathConstants.NODESET);
             if (nl.getLength() == 1) {
                 strPlace = replaceReservedCharMarkers(strPlace);
+                strPlace = strPlace.replaceAll("\\ *,\\ *", ",");
                 ((Element) nl.item(0)).setTextContent(strPlace.trim());
             }
         }
@@ -605,6 +607,7 @@ public class WorkerImpl extends AbstractWorker {
             nl = (NodeList) xp.evaluate("//body/series", doc, XPathConstants.NODESET);
             if (nl.getLength() == 1) {
                 strEmail = replaceReservedCharMarkers(strEmail);
+                strEmail = strEmail.replaceAll("\\ *,\\ *", ",");
                 ((Element) nl.item(0)).setTextContent(strEmail.trim());
             }
         }
@@ -616,6 +619,7 @@ public class WorkerImpl extends AbstractWorker {
             nl = (NodeList) xp.evaluate("//body/twitter", doc, XPathConstants.NODESET);
             if (nl.getLength() == 1) {
                 strTwitter = replaceReservedCharMarkers(strTwitter);
+                strTwitter = strTwitter.replaceAll("\\ *,\\ *", ",");
                 ((Element) nl.item(0)).setTextContent(strTwitter.trim());
             }
         }        
