@@ -7,6 +7,7 @@
     Description: Transform from NCM to web schema.
     Revision History:
         20140909 jpm -add "hyperlink" and "byline" elements
+                      the "byline" element contains a combination of the byline, email, twitter and title        
         20130919 jpm - use different xpaths for getting metadata, based on the pub
                         -using local:metadataNamingMode local function    
                      - strip space for "par" elements 
