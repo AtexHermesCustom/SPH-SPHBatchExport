@@ -6,7 +6,7 @@
     Author     : tstuehler
     Description: Transform from NCM to web schema.
     Revision History:
-        20140909 jpm -add "hyperlink" element
+        20140909 jpm -add "hyperlink" and "byline" elements
         20130919 jpm - use different xpaths for getting metadata, based on the pub
                         -using local:metadataNamingMode local function    
                      - strip space for "par" elements 
@@ -215,6 +215,7 @@
                 <xsl:apply-templates select="../../..//ncm-object[sp_id=$spId and ncm-type-property/object-type/@id!=1 and ncm-type-property/object-type/@id!=2 and ncm-type-property/object-type/@id!=11 and ncm-type-property/object-type/@id!=16 and ncm-type-property/object-type/@id!=17 
                     and (channel/@name=$channel or not(string(channel/@name)))]"/>
                 <xsl:element name="person"/>
+                <xsl:element name="byline"/>
                 <xsl:element name="twitter"/>
                 <xsl:element name="title"/>
                 <xsl:element name="country"/>
