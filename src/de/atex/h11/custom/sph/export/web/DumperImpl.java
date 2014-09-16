@@ -53,7 +53,7 @@ public class DumperImpl extends AbstractDumper {
         outputProperties.setProperty(OutputKeys.METHOD, "xml");
         outputProperties.setProperty(OutputKeys.STANDALONE, "no");
         outputProperties.setProperty(OutputKeys.CDATA_SECTION_ELEMENTS, 
-                "caption copyright person title country kick content h1 h2 video abstract");
+                "caption copyright person title country kick content h1 h2 video abstract byline hyperlink");
         outputProperties.setProperty("{http://xml.apache.org/xsl}indent-amount", "4");
         
         try {
